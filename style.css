@@ -2,15 +2,27 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
-#navbar-background {
-  background-color: #12191D;
-  border-bottom:#2A3034 solid 2px;
+.buttons button {
+  color: black;
+  font-weight: 700;
+  width: 115px;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+  display: flex-box;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
-#logo img {
-  width:80px;
-  height: 80px;
+#sign-up {
+  background-color: #8e7bff;
+  color: white;
+}
+
+#navbar-background {
+  background-color: white;
+  border-bottom: black solid 2px;
 }
 
 .topnav-container {
@@ -37,10 +49,7 @@ flex-flow: row nowrap;
 .heading-size-change {
   font-size: 15px;
 }
-#logo img {
-  width: 70px;
-  height: 70px;
-}
+
 }
 
 @media (max-width: 662px) {
@@ -51,10 +60,7 @@ flex-flow: row nowrap;
 .heading-size-change {
   font-size: 14px;
 }
-#logo img {
-  width: 70px;
-  height: 70px;
-}
+
 #logo-container {
   padding-right: 0%;
 }
@@ -80,11 +86,11 @@ flex-flow: row nowrap;
 }
 
 .topnav a {
-  float: left;
-  color: #81D1E8;
+  float: right;
+  color: black;
   text-align: center;
   text-decoration: none;
-  font-weight: 20px;
+  font-weight: 700;
   display: block;
 }
 
@@ -95,7 +101,7 @@ flex-flow: row nowrap;
   font-family: 'Montserrat', sans-serif;
   height: 75px;
   outline-offset: 1px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
@@ -104,28 +110,18 @@ flex-flow: row nowrap;
   text-align: center;
   font-size: 17px;
   align-items: center;
-  background-color: #2a30343b;
   border-radius: 10px;
-}
-
-.skeuomorphic-buttons:hover {
-  cursor: pointer;
-  text-decoration: underline #2A3034;
-  color: rgb(89, 207, 240);
-  transition: color 1s;
 }
 
 .container-xl {
 border-radius: 20px;
 margin-top: 10px;
-background-color: #81D1E8;
 border: #2a3a45 ridge 10px;
 }
 
 .top-row {
 margin-top: 25px;
 margin-bottom: 80px;
-background-color: #81D1E8;
 font-size: 70px;
 font-weight: 700;
 font-family: 'Montserrat', sans-serif;
@@ -139,14 +135,13 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
-  #logo {
+  .buttons-form {
     margin-top: 10px;
   }
 }
 
 .navbar-toggler {
   margin-top: 10px;
-  background-color: #81D1E8;
 }
 
 .navbar-toggler-icon {
@@ -156,15 +151,17 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 870px) {
-  #logo {
+  .buttons-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 7%;
+
   }
 
   .navbar-nav {
     width: max(1600px, calc(70% + 100px));
-    margin-left: 10%;
+    margin-left: 7%;
   }
 
   .heading-size-change {
@@ -173,10 +170,11 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 870px) {
-  #logo {
+  .buttons-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 7%;
   }
 }
 
@@ -188,7 +186,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
-  #logo {
+  .buttons-form {
     margin-bottom: 10px;
   }
   .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
@@ -196,7 +194,6 @@ font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 17px;
     align-items: center;
-    background-color: #2a30343b;
     border-radius: 10px;
     width: 80%;
     margin-bottom: 10px;
@@ -206,21 +203,31 @@ font-family: 'Montserrat', sans-serif;
 
 @media (max-width: 1000px) {
 
-  #logo {
+  .buttons-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 7%;
   }
 }
 
 .homepage-position {
-  position: absolute;
   padding-top: 150px;
-  z-index: 10;
-  width: 100%;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+
+#plan-button {
+  background-color: #80ea99;
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 25px;
+}
+
+.paragraph-text {
+  font-weight: 700;
+  font-size: 75px;
 }
